@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Sprite Animation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style_perro.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+
+  <div class='container'>
+    <a class="btn btn-success" id="subir"><h1>Subir</h1></a>
+
+</div>
+  
+  
+
+</body>
+<script>
+  var velocidad = 10
+  $("#subir").on("click", function(){
+     velocidad = velocidad-0.4;
+    var texto = velocidad+"s";
+     $(".fore").css({'-webkit-animation': 'bk linear infinite', '-webkit-animation-duration':  texto})
+     console.log(velocidad)
+  })
+ 
+</script>
+
+</html>

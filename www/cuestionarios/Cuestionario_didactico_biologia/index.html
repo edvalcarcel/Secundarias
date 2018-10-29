@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Background</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
+
+      <link rel="stylesheet" href="fondo/css/style.css">
+
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body>
+
+  <div id="large-header" class="large-header">
+  <canvas id="demo-canvas"></canvas>
+  <audio  type="audio/mpeg"  loop="true" autoplay="true" src="melodia.mp3"></audio>
+  <audio  type="audio/mpeg"  id="click" src="click2.mp3"></audio>
+  <h1 class="main-title " style="margin-top: -100px; font-size: 40px"> <span class="thin">Cuestionario de Biologia</span></h1>
+   <h1 id="comenzar" class="main-title btn btn-primary" style="margin-top: 30; font-size: 30px" ><a style="color: #fff; text-decoration: none;" href="index_2.html"><span class="thin">Comenzar</span></a></h1>
+    <h1 id="instrucciones" data-toggle="modal" data-target="#myModal" class="main-title btn btn-success" style="margin-top: 90px; font-size: 30px" > <span class="thin">Instrucciones</span></h1>
+</div>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+
+  
+
+    <script  src="fondo/js/index.js"></script>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background: #C7F2BA"">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Instruciones</h4>
+      </div>
+      <div class="modal-body" style="text-align: justify; font-size: 15px; background: #C7F2BA">
+        <p><strong>1.</strong> Responde las preguntas Acertadamente para conseguir mas puntaje</p>
+        <p><strong>2.</strong> Entre mas preguntas Seguidas mas puntaje acumularas</p>
+        <p><strong>3.</strong> A medida que Respondas bien La animacion tomara mas velocidad, haz que llegue al maximo!!</p>
+        <p><strong>4.</strong> En las preguntas de completar no influyen las letras mayusculas o minusculas</p>
+        <p><strong>5.</strong> Al final del juego conoceras los resultados del cuestionarios</p>
+        <p><strong>6.</strong> Intentalo una y otra vez, Puede que obtengas mas puntaje en el siguiente intento</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+    $("#comenzar, #instrucciones").hover(function(){
+      $("#click")[0].play();
+    });
+  });
+
+</script>
+
+</html>
