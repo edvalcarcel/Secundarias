@@ -11,6 +11,9 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <access origin="https://maps.googleapis.com" />
+    <access origin=”*.google.com” />
+<access origin=”*.googleapis.com” />
+<access origin=”*.gstatic.com” />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
