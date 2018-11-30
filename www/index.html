@@ -1,40 +1,14 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
--->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-<meta http-equiv="Content-Security-Policy" 
-         content="default-src *; 
-                  style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
-                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-        	<title>Google Maps - Rutas</title>
+        <meta charset="utf-8"/>
+        <title>JAB Geolocalización</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="https://dev-val.com/rutas/css/base.css">
-	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDrdbclZvGwnvYrNAZ7ctq-H4U5GqsMHiY"></script>
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDrdbclZvGwnvYrNAZ7ctq-H4U5GqsMHiY&callback=initMap"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://dev-val.com/rutas/js/jquery.js"></script>
 	<script type="text/javascript" src="https://dev-val.com/rutas/js/functions.js"></script>
